@@ -11,6 +11,8 @@ DataVault is an Android app, written in Kotlin and Jetpack Compose, that organiz
 | <img src="docs/screenshots/01-pin-lock.png" width="240"> | <img src="docs/screenshots/02-dashboard.png" width="240"> | <img src="docs/screenshots/03-explorer.png" width="240"> |
 | **Storage analysis** | **Secure vault** | **Settings** |
 | <img src="docs/screenshots/04-analysis.png" width="240"> | <img src="docs/screenshots/05-vault.png" width="240"> | <img src="docs/screenshots/06-settings.png" width="240"> |
+| **AI assistant: action plan** | **AI organize: user confirmation** | |
+| <img src="docs/screenshots/07-ai-assistant.png" width="240"> | <img src="docs/screenshots/08-ai-organize-confirm.png" width="240"> | |
 
 *Captured on a POCO X7 Pro (Android 16).*
 
@@ -19,7 +21,7 @@ DataVault is an Android app, written in Kotlin and Jetpack Compose, that organiz
 - **Dashboard & explorer:** storage overview by category, file browsing and favorites.
 - **Private vault:** **AES-256** encrypted files, PIN or **biometric** unlock, and auto-lock after 3 minutes of inactivity.
 - **Duplicate analysis:** finds repeated files so you can reclaim space.
-- **AI assistant:** summarizes documents (PDF text extraction with PDFBox) and answers questions about them, using Gemini and OpenRouter models.
+- **AI assistant (agent-style):** summarizes, paraphrases or extracts key points from documents (PDF text extraction with PDFBox), and proposes renames and folder organization. It builds a structured action plan and **asks the user to confirm before touching any file**. Models: Gemini and OpenRouter.
 - **Cloud backup:** Google sign-in with Firebase Auth, and backup to Google Drive through the Drive v3 API.
 
 ## Tech
